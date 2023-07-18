@@ -68,7 +68,7 @@ const NMW = () => {
           <p className='text-sm md:text-base lg:text-xl p-3'>CAST</p>
           <p className='text-sm md:text-base lg:text-xl font-bold'>Selin Kavak | Johannes Völkel | Florian Denk | Vera Maria Kremers | Jelena Bosanac | Yazan Melhem | Omar Crow | Cem Sultan Ungan
             Vera Streicher | Loay Alhamedi | Gizem Akman | Rabi Hanani | Khaled Rezek | Ilker Abay | Volkan Türeli | Matjaz Zaza Juren</p>
-          <p className='flex justify-center text-xs md:text-base p-8 whitespace-pre'>FICTION            |            D 2023            |            72 min            |            BLACK & WHITE</p>
+          <p className='flex justify-center text-xs md:text-base p-8 whitespace-pre'>FICTION            |            DE 2023            |            72 min            |            BLACK & WHITE</p>
         </div>
 
 

@@ -68,8 +68,8 @@ const COS = () => {
 
         <div className='flex flex-col text-center p-3'>
           <p className='text-sm md:text-base lg:text-xl p-3'>CAST</p>
-          <p className='text-sm md:text-base lg:text-xl font-bold'>Ahmad Alkurdi | Yazan Melhem | Dellair Youssef | Myriam Belhaj | Ahmed Roubied </p>
-          <p className='flex justify-center text-xs md:text-base p-8 whitespace-pre'>DOCUFICTION            |            D 2019            |            43 min            </p>
+          <p className='text-sm md:text-base lg:text-xl font-bold'>Ahmad Alkurdi | Yazan Melhem | Dellair Youssef | Myriam Belhaj | Ahmed Roubied | Usama Salama | Zia Alamir Daghstani | Basher Torkmani | Ovice Torkmani | Mohammad Alhussain | Lamia Baddour | Rafika Ajlani | Isra Ajlani | Samar Ajlani | Omar Ajlani | Ghaze Nakash | Radwan Zarka | Milan Radeta | Simon Meyer | Ludwig Hülk | Matjaz Juren | Bilge Redzep | Majid Albuni | Samar Albuni | Ali Erkan Özdemir | Ali Awada</p>
+          <p className='flex justify-center text-xs md:text-base p-8 whitespace-pre'>DOCUFICTION            |            DE 2019            |            43 min            </p>
         </div>
 
 
