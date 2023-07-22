@@ -5,8 +5,8 @@ import Navbar from '@/components/Navbar';
 
 
 const myFont = {
-  fontFamily: 'Roboto',
-  src: `url('../fonts/RobotoMono-ExtraLight.ttf')`
+  fontFamily: 'Playfair',
+  src: `url('../fonts/SpaceGrotesk.ttf)`
 }
 
 

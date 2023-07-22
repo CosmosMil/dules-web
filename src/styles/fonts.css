@@ -1,6 +1,14 @@
 @font-face {
   font-family: Roboto;
-  src: url("../fonts/RobotoMono-Regular.ttf");
-  font-family: Schwifty;
-  src: url("../fonts/get_schwifty.ttf");
+  src: url("../../public/fonts/RobotoMono-ExtraLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Playfair;
+  src: url("../../public/fonts/Playfair.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: SpaceGrotesk;
+  src: url("../../public/fonts/SpaceGrotesk.ttf") format("truetype");
 }
