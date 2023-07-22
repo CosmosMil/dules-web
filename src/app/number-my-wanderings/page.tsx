@@ -22,7 +22,7 @@ const NMW = () => {
 
   return (
     <main className='mt-5'>
-      <h1 className='p-6 text-xl md:text-2xl lg:text-3xl text-center text-purple-600 italic'>NUMBER MY WANDERINGS</h1>
+      <h1 className='p-6 text-xl md:text-2xl lg:text-3xl text-center text-purple-600 italic font-bold'>NUMBER MY WANDERINGS</h1>
       <Carousel autoPlay showStatus={false}>
         <div>
           <img src="https://res.cloudinary.com/dte85mpkw/image/upload/v1689581267/dule/movie-pics/ZDWMF_03.jpg" />
@@ -51,13 +51,13 @@ const NMW = () => {
       </Carousel>
       <div className='flex flex-col p-3'>
         <p className='text-m md:text-xl text-left p-3 italic'>In a church, a priest receives a group of refugees. In a bizarre and exaggerated way, the refugees are confronted with the bureaucracy that german institutions operate. The church serves as a hodgepodge of the most diverse institutions. Finally, the workers in this institutional mechanism turn out to be victims of the apparatus.</p>
-        <div className='flex justify-center p-5'>
+        <div className='flex justify-center p-8'>
           <table className='table-auto text-left p-5 leading-5'>
             <tbody className='text-sm md:text-base lg:text-xl'>
               {crewMembers.map((member) => (
                 <tr key={member.role}>
                   <td className='pr-12 p-1 '>{member.role}</td>
-                  <td className='p-1 '>{member.name}</td>
+                  <td className='p-1 font-bold'>{member.name}</td>
                 </tr>
               ))}
             </tbody>
@@ -68,7 +68,7 @@ const NMW = () => {
           <p className='text-sm md:text-base lg:text-xl p-3'>CAST</p>
           <p className='text-sm md:text-base lg:text-xl font-bold'>Selin Kavak | Johannes Völkel | Florian Denk | Vera Maria Kremers | Jelena Bosanac | Yazan Melhem | Omar Crow | Cem Sultan Ungan
             Vera Streicher | Loay Alhamedi | Gizem Akman | Rabi Hanani | Khaled Rezek | Ilker Abay | Volkan Türeli | Matjaz Zaza Juren</p>
-          <p className='flex justify-center text-xs md:text-base p-8 whitespace-pre'>FICTION            |            DE 2023            |            72 min            |            BLACK & WHITE</p>
+          <p className='flex justify-center text-xs md:text-base p-10 whitespace-pre'>FICTION            |            DE 2023            |            72 min            |            BLACK & WHITE</p>
         </div>
 
 
