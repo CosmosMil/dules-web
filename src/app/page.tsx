@@ -34,7 +34,7 @@ const Homepage = () => {
   const poster3 = {
     width: '400px',
     height: '580px',
-    backgroundImage: 'url(https://res.cloudinary.com/dte85mpkw/image/upload/v1689535109/dule/lod_rryhwv.jpg)',
+    backgroundImage: 'url(https://res.cloudinary.com/dte85mpkw/image/upload/v1692823637/dule/LOD.jpg)',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     margin: '0 1.5rem 1.5rem 0'
@@ -76,7 +76,7 @@ const Homepage = () => {
           onClick={clickPoster2}>
           {hoveredPoster2 && <div
             // eslint-disable-next-line react/jsx-no-comment-textnodes
-            className='flex flex-col items-center justify-center w-full h-full backdrop-brightness-75 text-white text-2xl italic'><p>Docufiction</p>
+            className='flex flex-col items-center justify-center w-full h-full backdrop-brightness-50 text-white text-2xl italic'><p>Docufiction</p>
 
             <p>43'</p>
             <p>2019</p>
@@ -90,7 +90,7 @@ const Homepage = () => {
           onClick={clickPoster3}>
           {hoveredPoster3 && <div
             // eslint-disable-next-line react/jsx-no-comment-textnodes
-            className='flex flex-col items-center justify-center w-full h-full backdrop-brightness-75 text-white text-2xl italic'><p>Documentary</p>
+            className='flex flex-col items-center justify-center w-full h-full backdrop-brightness-50 text-white text-2xl italic'><p>Documentary</p>
 
             <p>61'</p>
             <p>2012</p>
