@@ -22,7 +22,7 @@ const animalPics = [
 
 function PhotoGallery(props: Props) {
   return (
-    <main className='mt-10 ml-5 bg-slate-700'>
+    <main className='mt-10 bg-slate-700'>
 
       <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
         <Masonry>
