@@ -1,9 +1,10 @@
 "use client"
 
 import { url } from 'inspector'
-import React from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
+import Modal from '../../components/Modal'
 
 
 type Props = {}
@@ -21,9 +22,13 @@ const animalPics = [
 ]
 
 function PhotoGallery(props: Props) {
+
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
   return (
     <main className='mt-10 bg-slate-700'>
-
+      {modalOpen && <Modal src={selectedImage} closeModal={() => setModalOpen(false)} />}
       <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
         <Masonry>
           {animalPics.map((animal) => (
@@ -34,6 +39,10 @@ function PhotoGallery(props: Props) {
                 width={animal.width}
                 src={animal.url}
                 alt=''
+                onClick={() => {
+                  setSelectedImage(animal.url);
+                  setModalOpen(true)
+                }}
               />
             </div>
 
@@ -44,7 +53,7 @@ function PhotoGallery(props: Props) {
 
 
 
-    </main>
+    </main >
   )
 }
 
