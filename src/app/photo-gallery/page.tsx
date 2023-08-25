@@ -39,6 +39,7 @@ function PhotoGallery(props: Props) {
                 width={animal.width}
                 src={animal.url}
                 alt=''
+                style={{ cursor: 'pointer' }}
                 onClick={() => {
                   setSelectedImage(animal.url);
                   setModalOpen(true)
