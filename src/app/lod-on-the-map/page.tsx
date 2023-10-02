@@ -23,9 +23,9 @@ const LOD = () => {
   return (
     <main className='mt-5'>
       <h1 className='p-6 text-xl md:text-2xl lg:text-3xl text-center text-purple-600 italic font-bold'>LOD ON THE MAP!</h1>
-      <Carousel autoPlay showStatus={false}>
+      <Carousel autoPlay={true} interval={2000} showStatus={false} infiniteLoop={true}>
         <div>
-          <img src="https://res.cloudinary.com/dte85mpkw/image/upload/v1689703892/dule/movie-pics/LOD_2.jpg"
+          <img src="https://res.cloudinary.com/dte85mpkw/image/upload/v1695032925/dule/movie-pics/LOD_12.jpg"
           />
         </div>
         <div>
@@ -34,7 +34,7 @@ const LOD = () => {
           />
         </div>
         <div>
-          <img src="https://res.cloudinary.com/dte85mpkw/image/upload/v1689704004/dule/movie-pics/LOD_3.jpg" />
+          <img src="https://res.cloudinary.com/dte85mpkw/image/upload/v1695033103/dule/movie-pics/LOD_11.jpg" />
         </div>
         <div>
           <img src="https://res.cloudinary.com/dte85mpkw/image/upload/v1689707754/LOD_10.jpg" />
