@@ -16,7 +16,12 @@ function About(props: Props) {
             src="https://res.cloudinary.com/dte85mpkw/image/upload/v1689700678/dule/IMG_3137_byrnxk.jpg"
             alt="Dusan Solomun standing next to a camera, the city of Sarajevo in the background"
             height={400}
-            width={500} /></div>
+            width={500} />
+            <div className=' mt-5'>
+              <h1 className='text-xl text-purple-500'>CONTACT</h1>
+              <h2 className='text-lg'>info@dusansolomun.de</h2>
+              <h2 className='text-lg'>+49 157 74885135</h2>
+            </div></div>
 
           <div className='p-8 mr-8 text-justify lg:text-lg'>
             <div> Dušan Solomun is a Berlin-based director, cinematographer and photographer. He graduated from FH Dortmund with a major in film and television camera and documentary filmmaking. During his studies Solomun spent a year at the Bezalel Arts Academy in Jerusalem. There, he produced his debut full length documentary <Link className='text-purple-600' href='/lod-on-the-map'>LOD ON THE MAP!</Link> about four musicians from a small town in the heart of Israel, dreaming of a career. The film premiered at the Israel Film Festival Berlin in 2012.</div>
@@ -28,12 +33,10 @@ function About(props: Props) {
 
           </div>
 
-        </section>
-        {/* <section className='grid text-justify grid-flow-row xl:grid-flow-col max-w-max'>
-          
 
-         
-        </section> */}
+
+        </section>
+
       </div>
     </main>
 
