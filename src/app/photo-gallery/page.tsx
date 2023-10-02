@@ -32,7 +32,44 @@ const pics = [
 
   { name: 'fragments2', url: 'https://res.cloudinary.com/dte85mpkw/image/upload/v1692974394/dule/gallery/fragments2.jpg', height: 450, width: 350 },
 
-  { name: 'bird watch', url: 'https://res.cloudinary.com/dte85mpkw/image/upload/v1692974549/dule/gallery/bird-watch.jpg', height: 450, width: 350 },
+  { name: 'foggy alex', url: 'https://res.cloudinary.com/dte85mpkw/image/upload/v1696236567/dule/gallery/alex%20im%20nebel.jpg', height: 450, width: 350 },
+
+
+  { name: 'sheep', url: 'https://res.cloudinary.com/dte85mpkw/image/upload/v1696193053/dule/gallery/sheep.jpg', height: 500, width: 1000 },
+
+  { name: 'blue socks', url: 'https://res.cloudinary.com/dte85mpkw/image/upload/v1696235762/dule/gallery/blue-socks.jpg', height: 450, width: 350 },
+
+  { name: 'fragments3', url: 'https://res.cloudinary.com/dte85mpkw/image/upload/v1696227655/dule/gallery/fragments3.jpg', height: 450, width: 350 },
+
+  { name: 'playing', url: 'https://res.cloudinary.com/dte85mpkw/image/upload/v1692959652/dule/gallery/playing-with-the-world.jpg', height: 350, width: 500 },
+
+  { name: 'which way', url: 'https://res.cloudinary.com/dte85mpkw/image/upload/v1696228338/dule/gallery/which-way.jpg', height: 450, width: 350 },
+
+  { name: 'when I grow up', url: 'https://res.cloudinary.com/dte85mpkw/image/upload/v1696251427/dule/gallery/when-I-grow-up.jpg', height: 350, width: 500 },
+
+  { name: 'kids tell', url: 'https://res.cloudinary.com/dte85mpkw/image/upload/v1692959536/dule/gallery/kids-tell.jpg', height: 350, width: 500 },
+
+  { name: 'fallsucht', url: 'https://res.cloudinary.com/dte85mpkw/image/upload/v1696253802/dule/gallery/fallsucht.jpg', height: 350, width: 500 },
+
+
+
+  { name: 'a drop', url: 'https://res.cloudinary.com/dte85mpkw/image/upload/v1692959405/dule/gallery/a-drop.jpg', height: 350, width: 500 },
+
+  { name: 'mars', url: 'https://res.cloudinary.com/dte85mpkw/image/upload/v1692975311/dule/gallery/mars.jpg', height: 450, width: 350 },
+
+  { name: 'police was here', url: 'https://res.cloudinary.com/dte85mpkw/image/upload/v1696253513/dule/gallery/police-was-here.jpg', height: 350, width: 500 },
+
+  { name: 'bird watch', url: 'https://res.cloudinary.com/dte85mpkw/image/upload/v1696250392/dule/gallery/bird-watch.jpg', height: 450, width: 350 },
+
+  { name: 'ship', url: 'https://res.cloudinary.com/dte85mpkw/image/upload/v1692960867/dule/gallery/somewhere-in-the-ocean.jpg', height: 450, width: 350 },
+
+  { name: 'stairs to past', url: 'https://res.cloudinary.com/dte85mpkw/image/upload/v1696232038/dule/gallery/stairs-to-past.jpg', height: 450, width: 350 },
+
+  { name: 'whats next', url: 'https://res.cloudinary.com/dte85mpkw/image/upload/v1692975350/dule/gallery/whats-next.jpg', height: 450, width: 350 },
+
+  { name: 'moon is in place', url: 'https://res.cloudinary.com/dte85mpkw/image/upload/v1696252243/dule/gallery/moon-is-in-place.jpg', height: 450, width: 350 },
+
+  { name: 'weary', url: 'https://res.cloudinary.com/dte85mpkw/image/upload/v1692960029/dule/gallery/weary.jpg', height: 350, width: 500 },
 
 ]
 
@@ -47,7 +84,7 @@ function PhotoGallery(props: Props) {
       <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
         <Masonry>
           {pics.map((pic) => (
-            <div key={pic.name} className='flex justify-center p-2'>
+            <div key={pic.name} className='flex justify-center p-4'>
 
               <Image
                 height={pic.height}
