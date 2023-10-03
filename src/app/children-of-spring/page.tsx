@@ -23,7 +23,8 @@ const COS = () => {
   return (
     <main className='mt-5'>
       <h1 className='p-6 text-xl md:text-2xl lg:text-3xl text-center text-purple-600 italic font-bold'>CHILDREN OF SPRING</h1>
-      <Carousel autoPlay showStatus={false}>
+
+      <Carousel autoPlay={true} interval={2000} showStatus={false} showThumbs={false} infiniteLoop={true}>
         <div>
           <img src="https://res.cloudinary.com/dte85mpkw/image/upload/v1689667250/dule/movie-pics/COS_1.jpg" />
         </div>
@@ -43,13 +44,14 @@ const COS = () => {
           <img src="https://res.cloudinary.com/dte85mpkw/image/upload/v1689667242/dule/movie-pics/COS_6.jpg" />
         </div>
         <div>
-          <img src="
-            https://res.cloudinary.com/dte85mpkw/image/upload/v1689667249/dule/movie-pics/COS_2.jpg"/>
+          <img src="https://res.cloudinary.com/dte85mpkw/image/upload/v1689667249/dule/movie-pics/COS_2.jpg" />
         </div>
         <div>
           <img src="https://res.cloudinary.com/dte85mpkw/image/upload/v1689667240/dule/movie-pics/COS_8.jpg" />
         </div>
       </Carousel>
+
+
       <div className='flex flex-col p-3'>
         <p className='text-m md:text-xl text-left p-3 italic'>A group of Syrian refugees are walking up the stairs of a high-rise building in Berlin.
           Arriving on the rooftop, they begin to reenact the most dramatic situation they have encountered: crossing the Mediterranean between Turkey and Greece.</p>

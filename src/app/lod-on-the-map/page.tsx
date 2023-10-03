@@ -23,7 +23,7 @@ const LOD = () => {
   return (
     <main className='mt-5'>
       <h1 className='p-6 text-xl md:text-2xl lg:text-3xl text-center text-purple-600 italic font-bold'>LOD ON THE MAP!</h1>
-      <Carousel autoPlay={true} interval={2000} showStatus={false} infiniteLoop={true}>
+      <Carousel autoPlay={true} interval={2000} showStatus={false} showThumbs={false} infiniteLoop={true}>
         <div>
           <img src="https://res.cloudinary.com/dte85mpkw/image/upload/v1695032925/dule/movie-pics/LOD_12.jpg"
           />
