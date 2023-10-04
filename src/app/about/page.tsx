@@ -29,7 +29,7 @@ function About(props: Props) {
             <div className='mt-5'> Upon returning to Berlin, Solomun collaborated with Syrian director Rafat Alzakout to create several film and theater workshops for refugees.
               In 2019 Solomun completed his docufiction <Link className='text-purple-600' href='/children-of-spring'>CHILDREN OF SPRING</Link>. The movie features refugees reenacting the most dangerous part of their journey to Europe: The crossing of the Mediterranean Sea. Children of Spring screened at various international film festivals including Beldocs, FilmFestival Cottbus and Buffalo IFF. It won the mid-length feature film main prize at both the Salto Independent Film Festival and the Conception Independent Film Awards.</div>
 
-            <div className='mt-5'>Solomun&apos;s first feature film <Link className='text-purple-600' href='number-my-wanderings'>NUMBER MY WANDERINGS</Link>,in collaboration with Cinematographer <a href='https://www.tilohauke.de/' >TILO HAUKE</a>, premiered in spring 2023 at the <a href='https://achtungberlin.de/zaehle-die-wege-meiner-flucht/'>ACHTUNG BERLIN FILM FESTIVAL.</a></div>
+            <div className='mt-5'>Solomun&apos;s first feature film <Link className='text-purple-600' href='number-my-wanderings'>NUMBER MY WANDERINGS</Link>,in collaboration with Cinematographer <Link className='text-purple-600' href='https://www.tilohauke.de/' target='_blank' >TILO HAUKE</Link>, premiered in spring 2023 at the <Link className='text-purple-600' href='https://achtungberlin.de/zaehle-die-wege-meiner-flucht/' target='_blank'>ACHTUNG BERLIN FILM FESTIVAL.</Link></div>
 
           </div>
 
