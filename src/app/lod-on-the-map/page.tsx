@@ -4,7 +4,7 @@
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-
+import Link from 'next/link';
 
 
 
@@ -53,7 +53,7 @@ const LOD = () => {
         </div>
       </Carousel>
       <div className='flex flex-col p-3'>
-        <p className='text-m md:text-xl text-left p-3 italic'>A portrait of four young musicians, coming from Lod, a small city right in the heart of Israel. In the center of the movie are the attempts of each protagonist to accomplish a successful music career. It's a daily fight against poverty and miserable reality. Four young musicians on their quest for happiness, fame and acknowledgment in an unstable neighborhood full of conflicts.</p>
+        <p className='text-m md:text-xl text-left p-3 italic'>A portrait of four young musicians, coming from Lod, a small city right in the heart of Israel. In the center of the movie are the attempts of each protagonist to accomplish a successful music career. It's a daily fight against poverty and miserable reality. Four young musicians on their quest for happiness, fame and acknowledgment in an unstable neighborhood full of conflicts.<Link className='text-sm md:text-base lg:text-xl  text-purple-600' href='https://vimeo.com/manage/videos/216182569' target='_blank'> WATCH TRAILER</Link></p>
         <div className='flex justify-center p-8'>
           <table className='table-auto text-left p-5 leading-5'>
             <tbody className='text-sm md:text-base lg:text-xl'>

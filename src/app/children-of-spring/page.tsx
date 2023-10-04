@@ -4,6 +4,7 @@
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Link from 'next/link';
 
 
 
@@ -54,7 +55,7 @@ const COS = () => {
 
       <div className='flex flex-col p-3'>
         <p className='text-m md:text-xl text-left p-3 italic'>A group of Syrian refugees are walking up the stairs of a high-rise building in Berlin.
-          Arriving on the rooftop, they begin to reenact the most dramatic situation they have encountered: crossing the Mediterranean between Turkey and Greece.</p>
+          Arriving on the rooftop, they begin to reenact the most dramatic situation they have encountered: crossing the Mediterranean between Turkey and Greece.<Link className='text-sm md:text-base lg:text-xl  text-purple-600' href='https://vimeo.com/manage/videos/325527416' target='_blank'> WATCH TRAILER</Link></p>
         <div className='flex justify-center p-8'>
           <table className='table-auto text-left p-5 leading-5'>
             <tbody className='text-sm md:text-base lg:text-xl'>
