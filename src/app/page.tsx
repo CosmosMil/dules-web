@@ -1,8 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client"
 import React, { useState } from 'react';
-import Image from "next/image"
 import { useRouter } from "next/navigation"
+import '../styles/homepage.css'
 
 const Homepage = () => {
 
@@ -18,7 +18,7 @@ const Homepage = () => {
     backgroundImage: 'url("https://res.cloudinary.com/dte85mpkw/image/upload/v1689448740/dule/ZMW.jpg")',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
-    margin: '0 1.5rem 1.5rem 0'
+
 
   };
 
@@ -28,16 +28,16 @@ const Homepage = () => {
     backgroundImage: 'url("https://res.cloudinary.com/dte85mpkw/image/upload/v1689497450/dule/COS.jpg")',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
-    margin: '0 1.5rem 1.5rem 0'
+
   };
 
   const poster3 = {
     width: '400px',
-    height: '580px',
+    height: '565px',
     backgroundImage: 'url(https://res.cloudinary.com/dte85mpkw/image/upload/v1692823637/dule/LOD.jpg)',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
-    margin: '0 1.5rem 1.5rem 0'
+
   }
 
   const clickPoster1 = () => {
@@ -50,7 +50,9 @@ const Homepage = () => {
 
   const clickPoster3 = () => {
     router.push('lod-on-the-map')
-  }
+  };
+
+
 
 
   return (
@@ -74,7 +76,6 @@ const Homepage = () => {
           style={{ ...poster2, cursor: 'pointer' }}
           onClick={clickPoster2}>
           {hoveredPoster2 && <div
-            // eslint-disable-next-line react/jsx-no-comment-textnodes
             className='flex flex-col items-center justify-center w-full h-full backdrop-brightness-50 text-white text-2xl italic'><p>Docufiction</p>
 
             <p>43'</p>
@@ -88,7 +89,6 @@ const Homepage = () => {
           style={{ ...poster3, cursor: 'pointer' }}
           onClick={clickPoster3}>
           {hoveredPoster3 && <div
-            // eslint-disable-next-line react/jsx-no-comment-textnodes
             className='flex flex-col items-center justify-center w-full h-full backdrop-brightness-50 text-white text-2xl italic'><p>Documentary</p>
 
             <p>61'</p>
