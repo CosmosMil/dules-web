@@ -54,7 +54,7 @@ const Homepage = () => {
 
 
   return (
-    <main className='mt-10 ml-5'>
+    <main className='mt-10'>
       <div className="flex flex-wrap justify-center ">
         <div
           onMouseEnter={() => setHoveredPoster1(true)}
@@ -62,7 +62,6 @@ const Homepage = () => {
           style={{ ...poster1, cursor: 'pointer' }}
           onClick={clickPoster1} >
           {hoveredPoster1 && <div
-            // eslint-disable-next-line react/jsx-no-comment-textnodes
             className='flex flex-col items-center justify-center w-full h-full backdrop-brightness-50 text-white text-2xl italic'>
             <p>Feature</p>
             <p>72'</p>

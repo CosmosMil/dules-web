@@ -14,7 +14,7 @@ const Navbar = (props: Props) => {
   return (
     <div className='flex justify-between'>
       <Link
-        className='ml-10 mt-3'
+        className='ml-5 sm:ml-10 mt-3'
         href='/about'
         onMouseEnter={() => setHoverName(true)}
         onMouseLeave={() => setHoverName(false)}>
@@ -34,7 +34,7 @@ const Navbar = (props: Props) => {
       </Link>
 
       <Link
-        className='mr-10 mt-3'
+        className='mr-5 sm:mr-10 mt-3'
         href='/photo-gallery'
         onMouseEnter={() => setHoverPhoto(true)}
         onMouseLeave={() => setHoverPhoto(false)}>
