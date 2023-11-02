@@ -61,6 +61,8 @@ const Homepage = () => {
         <div
           onMouseEnter={() => setHoveredPoster1(true)}
           onMouseLeave={() => setHoveredPoster1(false)}
+          onTouchStart={() => setHoveredPoster1(true)}
+          onTouchEnd={() => setHoveredPoster1(false)}
           style={{ ...poster1, cursor: 'pointer' }}
           onClick={clickPoster1} >
           {hoveredPoster1 && <div
@@ -73,6 +75,8 @@ const Homepage = () => {
         <div
           onMouseEnter={() => setHoveredPoster2(true)}
           onMouseLeave={() => setHoveredPoster2(false)}
+          onTouchStart={() => setHoveredPoster1(true)}
+          onTouchEnd={() => setHoveredPoster1(false)}
           style={{ ...poster2, cursor: 'pointer' }}
           onClick={clickPoster2}>
           {hoveredPoster2 && <div
@@ -86,6 +90,8 @@ const Homepage = () => {
         <div
           onMouseEnter={() => setHoveredPoster3(true)}
           onMouseLeave={() => setHoveredPoster3(false)}
+          onTouchStart={() => setHoveredPoster1(true)}
+          onTouchEnd={() => setHoveredPoster1(false)}
           style={{ ...poster3, cursor: 'pointer' }}
           onClick={clickPoster3}>
           {hoveredPoster3 && <div
