@@ -11,7 +11,7 @@ function About(props: Props) {
   return (
     <main className='mt-5'>
       <div className='flex justify-center w-screen'>
-        <section className='grid grid-flow-row xl:grid-flow-col'>
+        <section className='grid grid-flow-row md:grid-flow-col'>
           <div className='p-8'><Image
             src="https://res.cloudinary.com/dte85mpkw/image/upload/v1689700678/dule/IMG_3137_byrnxk.jpg"
             alt="Dusan Solomun standing next to a camera, the city of Sarajevo in the background"
@@ -23,7 +23,7 @@ function About(props: Props) {
               <h2 className='text-base xl:text-lg'>+49 157 74885135</h2>
             </div></div>
 
-          <div className='p-8 mr-8 text-justify lg:text-lg break-words hyphens-auto lang= eng'>
+          <div className='p-8 mr-8 text-justify lg:text-lg break-words hyphens-auto' lang="eng">
             <div> Dušan Solomun is a Berlin-based director, cinematographer and photographer. He graduated from FH Dortmund with a major in film and television camera and documentary filmmaking. During his studies Solomun spent a year at the Bezalel Arts Academy in Jerusalem. There, he produced his debut full length documentary <Link className='text-purple-600' href='/lod-on-the-map'>LOD ON THE MAP!</Link> about four musicians from a small town in the heart of Israel, dreaming of a career. The film premiered at the Israel Film Festival Berlin in 2012.</div>
 
             <div className='mt-5'> Upon returning to Berlin, Solomun collaborated with Syrian director Rafat Alzakout to create several film and theater workshops for refugees.
