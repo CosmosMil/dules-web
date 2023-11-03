@@ -15,7 +15,7 @@ const NMW = () => {
     { role: 'DIRECTOR & SCREENWRITER', name: 'DUŠAN SOLOMUN' },
     { role: 'DIRECTOR OF PHOTOGRAPHY', name: 'TILO HAUKE' },
     { role: 'SOUND', name: 'OSCAR STIEBITZ' },
-    { role: 'EDITORS', name: 'JANN ANDEREGG / JAN BIHL' },
+    { role: 'EDITORS', name: 'JANN ANDEREGG, JAN BIHL' },
     { role: 'MUSIC', name: 'EMRE TÜRKER' },
   ];
 
@@ -56,7 +56,7 @@ const NMW = () => {
 
 
 
-        <div className='flex justify-center p-8'>
+        <div className='flex justify-center pt-8 pl-8 pr-8'>
 
           <table className='table-auto text-left p-5 leading-5'>
             <tbody className='text-sm md:text-base lg:text-xl'>
@@ -70,7 +70,7 @@ const NMW = () => {
           </table>
         </div>
 
-        <div className='flex flex-col text-center p-3'>
+        <div className='flex flex-col text-center'>
           <p className='text-sm md:text-base lg:text-xl p-3'>CAST</p>
           <p className='text-sm md:text-base lg:text-xl font-bold'>Selin Kavak | Johannes Völkel | Florian Denk | Vera Maria Kremers | Jelena Bosanac | Yazan Melhem | Omar Crow | Cem Sultan Ungan
             Vera Streicher | Loay Alhamedi | Gizem Akman | Rabi Hanani | Khaled Rezek | Ilker Abay | Volkan Türeli | Matjaz Zaza Juren</p>
