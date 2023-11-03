@@ -23,7 +23,7 @@ const LOD = () => {
   return (
     <main className='mt-5'>
       <h1 className='p-6 text-xl md:text-2xl lg:text-3xl text-center text-purple-600 italic font-bold'>LOD ON THE MAP!</h1>
-      <Carousel autoPlay={true} interval={3000} showStatus={false} showThumbs={false} showArrows={false} infiniteLoop={true}>
+      <Carousel autoPlay={true} interval={3000} showStatus={false} showThumbs={false} showArrows={false} infiniteLoop={true} showIndicators={false}>
         <div>
           <img src="https://res.cloudinary.com/dte85mpkw/image/upload/v1695032925/dule/movie-pics/LOD_12.jpg"
           />
@@ -70,7 +70,7 @@ const LOD = () => {
         <div className='flex flex-col text-center p-3'>
           <p className='text-sm md:text-base lg:text-xl p-3'>CAST</p>
           <p className='text-sm md:text-base lg:text-xl font-bold'> Liron Zohar | Mohhamad Avari | Nethanel Geta | Moshe Sapiashvilly</p>
-          <p className='flex justify-center text-xs md:text-base p-10 whitespace-pre'>DOCUMENTARY            |            DE 2012            |            61 min            </p>
+
         </div>
 
 
