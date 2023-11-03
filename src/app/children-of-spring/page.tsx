@@ -25,7 +25,7 @@ const COS = () => {
     <main className='mt-5'>
       <h1 className='p-6 text-xl md:text-2xl lg:text-3xl text-center text-purple-600 italic font-bold'>CHILDREN OF SPRING</h1>
 
-      <Carousel autoPlay={true} interval={3000} showStatus={false} showThumbs={false} showArrows={false} infiniteLoop={true} showIndicators={false}>
+      <Carousel autoPlay={true} interval={3000} showStatus={false} showThumbs={false} showArrows={false} infiniteLoop={true} showIndicators={false} stopOnHover={false}>
         <div>
           <img src="https://res.cloudinary.com/dte85mpkw/image/upload/v1689667250/dule/movie-pics/COS_1.jpg" />
         </div>
