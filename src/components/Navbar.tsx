@@ -18,7 +18,7 @@ const Navbar = (props: Props) => {
         href='/about'
         onMouseEnter={() => setHoverName(true)}
         onMouseLeave={() => setHoverName(false)}>
-        <p className='text-purple-500 text-sm sm:text-xl lg:text-2xl'>DUŠAN</p><p className='text-purple-600 font-bold text-base sm:text-2xl lg:text-3xl'>SOLOMUN</p>
+        <p className='text-purple-500 text-base sm:text-xl lg:text-2xl'>DUŠAN</p><p className='text-purple-600 font-bold text-base sm:text-2xl lg:text-3xl'>SOLOMUN</p>
         {hoverName ? (<div className=' text-white text-xl lg:text-2xl italic font-bold'>ABOUT</div>) : (<div className='h-6'></div>)}
 
       </Link>
