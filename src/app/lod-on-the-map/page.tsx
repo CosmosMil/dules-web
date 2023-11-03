@@ -67,7 +67,7 @@ const LOD = () => {
           </table>
         </div>
 
-        <div className='flex flex-col text-center'>
+        <div className='flex flex-col text-center mt-5'>
           <p className='text-sm md:text-base lg:text-xl p-3'>CAST</p>
           <p className='text-sm md:text-base lg:text-xl font-bold'> Liron Zohar | Mohhamad Avari | Nethanel Geta | Moshe Sapiashvilly</p>
 

@@ -70,7 +70,7 @@ const COS = () => {
           </table>
         </div>
 
-        <div className='flex flex-col text-center'>
+        <div className='flex flex-col text-center mt-5'>
           <p className='text-sm md:text-base lg:text-xl p-3'>CAST</p>
           <p className='text-sm md:text-base lg:text-xl font-bold'>Ahmad Alkurdi | Yazan Melhem | Dellair Youssef | Myriam Belhaj | Ahmed Roubied | Usama Salama | Zia Alamir Daghstani | Basher Torkmani | Ovice Torkmani | Mohammad Alhussain | Lamia Baddour | Rafika Ajlani | Isra Ajlani | Samar Ajlani | Omar Ajlani | Ghaze Nakash | Radwan Zarka | Milan Radeta | Simon Meyer | Ludwig Hülk | Matjaz Juren | Bilge Redzep | Majid Albuni | Samar Albuni | Ali Erkan Özdemir | Ali Awada</p>
 
