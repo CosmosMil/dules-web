@@ -18,8 +18,8 @@ const Navbar = (props: Props) => {
         href='/about'
         onMouseEnter={() => setHoverName(true)}
         onMouseLeave={() => setHoverName(false)}>
-        <p className='text-purple-500 text-base sm:text-xl lg:text-2xl'>DUŠAN</p><p className='text-purple-600 font-bold text-base sm:text-2xl lg:text-3xl'>SOLOMUN</p>
-        {hoverName ? (<div className=' text-white text-xl lg:text-2xl italic font-bold'>ABOUT</div>) : (<div className='h-6'></div>)}
+        <p className='text-purple-500 text-base sm:text-xl xl:text-2xl'>DUŠAN</p><p className='text-purple-600 font-bold text-base sm:text-2xl xl:text-3xl'>SOLOMUN</p>
+        {hoverName ? (<div className=' text-white text-xl xl:text-2xl italic font-bold'>ABOUT</div>) : (<div className='h-6'></div>)}
 
       </Link>
 
@@ -28,9 +28,9 @@ const Navbar = (props: Props) => {
         href='/'
         onMouseEnter={() => setHoverFilm(true)}
         onMouseLeave={() => setHoverFilm(false)}>
-        <p className='text-black text-lg sm:text-xl lg:text-3xl font-bold'>F I L M</p>
-        <p className='text-black text-sm sm:text-xl lg:text-2xl'>MAKER</p>
-        {hoverFilm ? (<div className=' text-white text-xl lg:text-2xl italic font-bold'>HOME</div>) : (<div className='h-8'></div>)}
+        <p className='text-black text-lg sm:text-xl xl:text-3xl font-bold'>F I L M</p>
+        <p className='text-black text-sm sm:text-xl xl:text-2xl'>MAKER</p>
+        {hoverFilm ? (<div className=' text-white text-xl xl:text-2xl italic font-bold'>HOME</div>) : (<div className='h-8'></div>)}
       </Link>
 
       <Link
@@ -38,9 +38,9 @@ const Navbar = (props: Props) => {
         href='/photo-gallery'
         onMouseEnter={() => setHoverPhoto(true)}
         onMouseLeave={() => setHoverPhoto(false)}>
-        <p className='text-black text-lg sm:text-xl lg:text-3xl font-bold'>P H O T O</p>
-        <p className='text-black text-sm sm:text-xl lg:text-2xl'>GRAPHER</p>
-        {hoverPhoto ? (<div className=' text-white text-xl lg:text-2xl italic font-bold'>GALLERY</div>) : (<div className='h-8'></div>)}
+        <p className='text-black text-lg sm:text-xl xl:text-3xl font-bold'>P H O T O</p>
+        <p className='text-black text-sm sm:text-xl xl:text-2xl'>GRAPHER</p>
+        {hoverPhoto ? (<div className=' text-white text-xl xl:text-2xl italic font-bold'>GALLERY</div>) : (<div className='h-8'></div>)}
       </Link>
 
 

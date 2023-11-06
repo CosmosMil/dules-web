@@ -23,7 +23,7 @@ const COS = () => {
 
   return (
     <main className='mt-5'>
-      <h1 className='p-6 text-xl md:text-2xl lg:text-3xl text-center text-purple-600 italic font-bold'>CHILDREN OF SPRING</h1>
+      <h1 className='p-6 text-xl md:text-2xl xl:text-3xl text-center text-purple-600 italic font-bold'>CHILDREN OF SPRING</h1>
 
       <Carousel autoPlay={true} interval={3000} showStatus={false} showThumbs={false} showArrows={false} infiniteLoop={true} showIndicators={false} stopOnHover={false}>
         <div>
@@ -56,10 +56,10 @@ const COS = () => {
 
       <div className='flex flex-col p-3'>
         <p className='text-m md:text-xl text-left p-3 italic'>A group of Syrian refugees are walking up the stairs of a high-rise building in Berlin.
-          Arriving on the rooftop, they begin to reenact the most dramatic situation they have encountered: crossing the Mediterranean between Turkey and Greece.<Link className='text-sm md:text-base lg:text-xl  text-purple-600' href='https://vimeo.com/manage/videos/325527416' target='_blank'> WATCH TRAILER</Link></p>
+          Arriving on the rooftop, they begin to reenact the most dramatic situation they have encountered: crossing the Mediterranean between Turkey and Greece.<Link className='text-sm md:text-base xl:text-xl  text-purple-600' href='https://vimeo.com/manage/videos/325527416' target='_blank'> WATCH TRAILER</Link></p>
         <div className='flex justify-center pt-8 pl-8 pr-8'>
           <table className='table-auto text-left p-5 leading-5'>
-            <tbody className='text-sm md:text-base lg:text-xl'>
+            <tbody className='text-sm md:text-base xl:text-xl'>
               {crewMembers.map((member) => (
                 <tr key={member.role}>
                   <td className='pr-12 p-1 '>{member.role}</td>
@@ -71,8 +71,8 @@ const COS = () => {
         </div>
 
         <div className='flex flex-col text-center mt-5'>
-          <p className='text-sm md:text-base lg:text-xl p-3'>CAST</p>
-          <p className='text-sm md:text-base lg:text-xl font-bold'>Ahmad Alkurdi | Yazan Melhem | Dellair Youssef | Myriam Belhaj | Ahmed Roubied | Usama Salama | Zia Alamir Daghstani | Basher Torkmani | Ovice Torkmani | Mohammad Alhussain | Lamia Baddour | Rafika Ajlani | Isra Ajlani | Samar Ajlani | Omar Ajlani | Ghaze Nakash | Radwan Zarka | Milan Radeta | Simon Meyer | Ludwig Hülk | Matjaz Juren | Bilge Redzep | Majid Albuni | Samar Albuni | Ali Erkan Özdemir | Ali Awada</p>
+          <p className='text-sm md:text-base xl:text-xl p-3'>CAST</p>
+          <p className='text-sm md:text-base xl:text-xl font-bold'>Ahmad Alkurdi | Yazan Melhem | Dellair Youssef | Myriam Belhaj | Ahmed Roubied | Usama Salama | Zia Alamir Daghstani | Basher Torkmani | Ovice Torkmani | Mohammad Alhussain | Lamia Baddour | Rafika Ajlani | Isra Ajlani | Samar Ajlani | Omar Ajlani | Ghaze Nakash | Radwan Zarka | Milan Radeta | Simon Meyer | Ludwig Hülk | Matjaz Juren | Bilge Redzep | Majid Albuni | Samar Albuni | Ali Erkan Özdemir | Ali Awada</p>
 
         </div>
 
