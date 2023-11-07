@@ -19,6 +19,7 @@ const Modal: React.FC<Props> = ({ src, closeModal }) => {
           fill
           src={src}
           alt=''
+          loading='eager'
           onClick={closeModal}
           objectFit="contain"
         />
