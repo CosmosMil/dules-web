@@ -1,10 +1,10 @@
 "use client"
 
-import { url } from 'inspector'
-import React, { useState } from 'react'
-import Image from 'next/image'
+import React, { useState, useEffect } from 'react'
+import NextImage from 'next/image'
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
 import Modal from '../../components/Modal'
+
 
 
 type Props = {}
@@ -51,8 +51,6 @@ const pics = [
 
   { name: 'fallsucht', url: 'https://res.cloudinary.com/dte85mpkw/image/upload/v1696253802/dule/gallery/fallsucht.jpg', height: 350, width: 500 },
 
-
-
   { name: 'a drop', url: 'https://res.cloudinary.com/dte85mpkw/image/upload/v1692959405/dule/gallery/a-drop.jpg', height: 350, width: 500 },
 
   { name: 'mars', url: 'https://res.cloudinary.com/dte85mpkw/image/upload/v1692975311/dule/gallery/mars.jpg', height: 450, width: 350 },
@@ -78,6 +76,21 @@ function PhotoGallery(props: Props) {
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
+
+  const preloadImages = () => {
+    const imageUrlsToPreload = pics.map((pic) => pic.url);
+
+    imageUrlsToPreload.forEach((imageUrl) => {
+      const img = new Image();
+      img.src = imageUrl;
+    });
+  };
+
+
+  useEffect(() => {
+    preloadImages();
+  }, []);
+
   return (
     <main className='mt-10 bg-slate-700'>
       {modalOpen && <Modal src={selectedImage} closeModal={() => setModalOpen(false)} />}
@@ -86,7 +99,7 @@ function PhotoGallery(props: Props) {
           {pics.map((pic) => (
             <div key={pic.name} className='flex justify-center p-4'>
 
-              <Image
+              <NextImage
                 height={pic.height}
                 width={pic.width}
                 src={pic.url}
