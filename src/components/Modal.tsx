@@ -14,22 +14,16 @@ const Modal: React.FC<Props> = ({ src, closeModal }) => {
   return (
 
     <div className='fixed top-0 left-0 w-full h-full bg-black bg-opacity-80 flex justify-center items-center' onClick={closeModal}>
-      <img
-        src={src}
-        alt=''
-
-        onClick={closeModal}
-        style={{ cursor: 'pointer', maxWidth: '100%', maxHeight: '85vh' }}
-      />
-
-
-
-
+      <div style={{ height: '90vh', width: '100%', position: 'relative' }}>
+        <Image
+          fill
+          src={src}
+          alt=''
+          onClick={closeModal}
+          objectFit="contain"
+        />
+      </div>
     </div>
-
-
-
-
   )
 }
 
