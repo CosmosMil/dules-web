@@ -75,6 +75,7 @@ function PhotoGallery(props: Props) {
 
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [currentPic, setCurrentPic] = useState<number | null>(null);
 
 
   const preloadImages = () => {
@@ -91,9 +92,32 @@ function PhotoGallery(props: Props) {
     preloadImages();
   }, []);
 
+  const goToNext = () => {
+    if (currentPic !== null && currentPic < pics.length - 1) {
+      setCurrentPic(currentPic + 1);
+      setSelectedImage(pics[currentPic + 1].url);
+    }
+  };
+
+  const goToPrevious = () => {
+    if (currentPic !== null && currentPic > 0) {
+      setCurrentPic(currentPic - 1);
+      setSelectedImage(pics[currentPic - 1].url);
+    }
+  };
+
   return (
     <main className='mt-10 bg-slate-700'>
-      {modalOpen && <Modal src={selectedImage} closeModal={() => setModalOpen(false)} />}
+      {modalOpen &&
+        <Modal
+          src={selectedImage}
+          pics={pics}
+
+          closeModal={() => setModalOpen(false)}
+          goToNext={goToNext}
+          goToPrevious={goToPrevious}
+          selectedImage={currentPic}
+        />}
       <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
         <Masonry>
           {pics.map((pic) => (
@@ -107,6 +131,7 @@ function PhotoGallery(props: Props) {
                 style={{ cursor: 'pointer' }}
                 onClick={() => {
                   setSelectedImage(pic.url);
+                  setCurrentPic(pics.indexOf(pic));
                   setModalOpen(true)
                 }}
               />
