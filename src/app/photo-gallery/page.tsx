@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useState, useEffect } from 'react'
-import NextImage from 'next/image'
+import NextImage from "next/legacy/image"
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
 import Modal from '../../components/Modal'
 

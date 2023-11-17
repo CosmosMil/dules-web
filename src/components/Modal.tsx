@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image'
+import Image from "next/legacy/image"
 
 type Pic = {
   name: string;
@@ -28,14 +28,14 @@ const Modal: React.FC<Props> = ({ src, closeModal, goToNext, goToPrevious, selec
 
   return (
 
-    <div className='fixed top-0 left-0 w-full h-full bg-black bg-opacity-80 flex justify-center items-center' onClick={closeModal}>
+    <div className='fixed top-0 left-0 w-full h-full bg-black bg-opacity-80 flex justify-center items-center z-50' onClick={closeModal}>
       {selectedImage && selectedImage > 0 && (<button className='text-white text-3xl w-8 h-8 md:w-16 md:h-16'
         onClick={(e) => { goToPrevious(); stopPropagation(e); }}>
         &#8592;</button>)}
 
       <div style={{ height: '90vh', width: '100%', position: 'relative' }}>
         <Image
-          fill
+          layout='fill'
           src={src}
           alt=''
           loading='eager'

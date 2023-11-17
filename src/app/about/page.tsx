@@ -1,7 +1,7 @@
 "use client"
 
 import React from 'react'
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import Link from 'next/link';
 
 
@@ -15,7 +15,7 @@ function About(props: Props) {
           <div className='p-8'><Image
             src="https://res.cloudinary.com/dte85mpkw/image/upload/v1689700678/dule/IMG_3137_byrnxk.jpg"
             alt="Dusan Solomun standing next to a camera, the city of Sarajevo in the background"
-            height={400}
+            height={350}
             width={500} />
             <div className=' mt-5'>
               <h1 className='text-lg xl:text-xl text-purple-500'>CONTACT</h1>
