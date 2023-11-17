@@ -40,7 +40,7 @@ const Modal: React.FC<Props> = ({ src, closeModal, goToNext, goToPrevious, selec
     <div
       {...swipeHandlers}
       className='fixed top-0 left-0 w-full h-full bg-black bg-opacity-80 flex justify-center items-center z-50' onClick={closeModal}>
-      {selectedImage && selectedImage > 0 && (<button className='text-white text-3xl w-8 h-8 md:w-16 md:h-16'
+      {selectedImage && selectedImage > 0 && (<button className='hidden md:inline-block text-white text-3xl w-8 h-8 md:w-16 md:h-16'
         onClick={(e) => { goToPrevious(); stopPropagation(e); }}>
         &#8592;</button>)}
 
@@ -54,7 +54,7 @@ const Modal: React.FC<Props> = ({ src, closeModal, goToNext, goToPrevious, selec
           objectFit="contain"
         />
       </div>
-      {selectedImage !== null && selectedImage < pics.length - 1 && (<button className=' text-white text-3xl w-8 h-8 md:w-16 md:h-16' onClick={(e) => { goToNext(); stopPropagation(e); }}>
+      {selectedImage !== null && selectedImage < pics.length - 1 && (<button className='hidden md:inline-block text-white text-3xl w-8 h-8 md:w-16 md:h-16' onClick={(e) => { goToNext(); stopPropagation(e); }}>
         &#8594;
       </button>)}
 
