@@ -1,6 +1,8 @@
 import React from 'react';
 import Image from "next/legacy/image";
-import { useSwipeable } from 'react-swipeable'
+import { useSwipeable } from 'react-swipeable';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 type Pic = {
   name: string;
@@ -40,9 +42,9 @@ const Modal: React.FC<Props> = ({ src, closeModal, goToNext, goToPrevious, selec
     <div
       {...swipeHandlers}
       className='fixed top-0 left-0 w-full h-full bg-black bg-opacity-80 flex justify-center items-center z-50' onClick={closeModal}>
-      {selectedImage && selectedImage > 0 && (<button className='hidden md:inline-block text-white text-3xl w-8 h-8 md:w-16 md:h-16'
+      {selectedImage && selectedImage > 0 && (<button className='hidden md:inline-block text-white text-2xl w-8 h-8 md:w-16 md:h-16'
         onClick={(e) => { goToPrevious(); stopPropagation(e); }}>
-        &#8592;</button>)}
+        <i className="fas fa-arrow-left"></i></button>)}
 
       <div style={{ height: '90vh', width: '100%', position: 'relative' }}>
         <Image
@@ -54,8 +56,8 @@ const Modal: React.FC<Props> = ({ src, closeModal, goToNext, goToPrevious, selec
           objectFit="contain"
         />
       </div>
-      {selectedImage !== null && selectedImage < pics.length - 1 && (<button className='hidden md:inline-block text-white text-3xl w-8 h-8 md:w-16 md:h-16' onClick={(e) => { goToNext(); stopPropagation(e); }}>
-        &#8594;
+      {selectedImage !== null && selectedImage < pics.length - 1 && (<button className='hidden md:inline-block text-white text-2xl w-8 h-8 md:w-16 md:h-16' onClick={(e) => { goToNext(); stopPropagation(e); }}>
+        <i className="fas fa-arrow-right"></i>
       </button>)}
 
     </div>
