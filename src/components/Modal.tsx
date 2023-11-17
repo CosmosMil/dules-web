@@ -43,7 +43,7 @@ const Modal: React.FC<Props> = ({ src, closeModal, goToNext, goToPrevious, selec
           objectFit="contain"
         />
       </div>
-      {selectedImage && selectedImage >= 0 && selectedImage < pics.length - 1 && (<button className=' text-white text-3xl w-8 h-8 md:w-16 md:h-16' onClick={(e) => { goToNext(); stopPropagation(e); }}>
+      {selectedImage !== null && selectedImage < pics.length - 1 && (<button className=' text-white text-3xl w-8 h-8 md:w-16 md:h-16' onClick={(e) => { goToNext(); stopPropagation(e); }}>
         &#8594;
       </button>)}
 

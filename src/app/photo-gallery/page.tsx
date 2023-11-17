@@ -10,6 +10,7 @@ import Modal from '../../components/Modal'
 type Props = {}
 
 const pics = [
+
   { name: 'seek and hide', url: 'https://res.cloudinary.com/dte85mpkw/image/upload/v1692971132/dule/gallery/seek-and-hide.jpg', height: 350, width: 500 },
 
   { name: 'eggs and phone', url: 'https://res.cloudinary.com/dte85mpkw/image/upload/v1692972574/dule/gallery/eggs_and_phone.jpg', height: 450, width: 350 },
@@ -130,9 +131,10 @@ function PhotoGallery(props: Props) {
                 alt=''
                 style={{ cursor: 'pointer' }}
                 onClick={() => {
-                  setSelectedImage(pic.url);
                   setCurrentPic(pics.indexOf(pic));
+                  setSelectedImage(pic.url);
                   setModalOpen(true)
+
                 }}
               />
             </div>
