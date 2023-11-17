@@ -1,5 +1,6 @@
 import React from 'react';
-import Image from "next/legacy/image"
+import Image from "next/legacy/image";
+import { useSwipeable } from 'react-swipeable'
 
 type Pic = {
   name: string;
@@ -20,15 +21,25 @@ type Props = {
 }
 
 const Modal: React.FC<Props> = ({ src, closeModal, goToNext, goToPrevious, selectedImage, pics }) => {
+  const swipeHandlers = useSwipeable({
+    onSwipedLeft: () => goToNext(),
+    onSwipedRight: () => goToPrevious(),
+    trackMouse: true
+  })
+
   if (!src) return null;
 
   const stopPropagation = (e: React.MouseEvent) => {
     e.stopPropagation();
   };
 
+
+
   return (
 
-    <div className='fixed top-0 left-0 w-full h-full bg-black bg-opacity-80 flex justify-center items-center z-50' onClick={closeModal}>
+    <div
+      {...swipeHandlers}
+      className='fixed top-0 left-0 w-full h-full bg-black bg-opacity-80 flex justify-center items-center z-50' onClick={closeModal}>
       {selectedImage && selectedImage > 0 && (<button className='text-white text-3xl w-8 h-8 md:w-16 md:h-16'
         onClick={(e) => { goToPrevious(); stopPropagation(e); }}>
         &#8592;</button>)}
