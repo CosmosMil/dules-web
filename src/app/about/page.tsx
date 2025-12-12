@@ -19,7 +19,7 @@ function About(props: Props) {
             width={500} />
             <div className=' mt-5'>
               <h1 className='text-lg xl:text-xl text-purple-500'>CONTACT</h1>
-              <h2 className='text-base xl:text-lg'>info@dusansolomun.de</h2>
+              <h2 className='text-base xl:text-lg'>solomundullex@gmail.com</h2>
               <h2 className='text-base xl:text-lg'>+49 157 74885135</h2>
             </div></div>
 
